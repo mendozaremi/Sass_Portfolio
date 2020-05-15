@@ -1,5 +1,12 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+// Grey & Yellow
+// $primary-color: #444;
+// $secondary-color: #eece1a;
+
+// Navy & Orange
+$primary-color: #00263b;
+$secondary-color: #f8631d;
+
+
 $show-home-image: true;
 $home-image: url(../dist/img/background.jpg);
 $background-opacity: 0.9;
@@ -30,15 +37,6 @@ $background-opacity: 0.9;
   }
 }
 
-// set text color
-@function set-text-color($color) {
-  @if(lightness($color) > 40) {
-    @return #000;
-  } @else {
-    @return #fff;
-  }
-}
-
 // Media query Mixins
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
@@ -60,3 +58,13 @@ $background-opacity: 0.9;
     @content;
   }
 }
+
+// set text color
+@function set-text-color($color) {
+  @if(lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+

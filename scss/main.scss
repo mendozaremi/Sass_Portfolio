@@ -78,8 +78,8 @@ main {
   grid-template-areas:
   'bioimage bio bio'
   'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr)
-}
+  grid-template-columns: repeat(3, 1fr);
+
 
 .bio-image {
   grid-area: bioimage;
@@ -104,12 +104,14 @@ main {
 .job3 {
   grid-area: job3;
 }
-
 .job {
   background: lighten($primary-color, 5);
   padding: 0.5rem;
   border-bottom: $secondary-color 5px solid;
 }
+}
+
+
 
 // Work/projects
 .projects {
@@ -153,6 +155,31 @@ main {
       }
     }
   }
+}
+
+//Skills
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.js {
+  width: 90%;
+  background-color: #808080;
+}
+.html {
+  width: 80%;
+  background-color: #808080;
+}
+.css {
+  width: 70%;
+  background-color: #808080;
+}
+.ux {
+  width: 50%;
+  background-color: #808080;
 }
 
 // Button Styles
